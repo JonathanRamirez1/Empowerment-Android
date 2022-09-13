@@ -11,5 +11,5 @@ data class RecipeModel(
     @SerializedName("original") val original: String?,
     @SerializedName("originalName") val originalName: String?,
     @SerializedName("amount") val amount: Float?,
-    @SerializedName("measures") val measure: MeasureModel?
+    @SerializedName("measures") val measureModel: MeasureModel?
 )
