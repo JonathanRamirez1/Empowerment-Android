@@ -1,16 +1,29 @@
 package com.jonathan.empowerment.data.repository
 
-class RecipeRepositoryImpl : RecipeRepository {
+import com.jonathan.empowerment.data.datasource.local.RecipeLocalDataSource
+import com.jonathan.empowerment.data.datasource.local.entity.toListRecipes
+import com.jonathan.empowerment.data.datasource.remote.model.RecipeModel
+import com.jonathan.empowerment.data.datasource.remote.model.toListRecipes
+import com.jonathan.empowerment.data.datasource.remote.network.RecipeRemoteDataSource
+import com.jonathan.empowerment.domain.model.Recipes
+import com.jonathan.empowerment.domain.model.toListRecipeEntity
+import javax.inject.Inject
+
+class RecipeRepositoryImpl @Inject constructor(
+    private val remoteDataSource: RecipeRemoteDataSource,
+    private val localDataSource: RecipeLocalDataSource
+) : RecipeRepository {
 
     override suspend fun getAllRecipesFromRemote(): List<Recipes> {
-        TODO("Not yet implemented")
+        val response: List<RecipeModel> = remoteDataSource.getRecipesFromApi()
+        return response.toListRecipes()
     }
 
     override suspend fun getAllRecipesFromLocal(): List<Recipes> {
-        TODO("Not yet implemented")
+        return localDataSource.getAllRecipes().toListRecipes()
     }
 
-    override suspend fun insertAllRecipes(items: List<Recipes>) {
-        TODO("Not yet implemented")
+    override suspend fun insertAllRecipes(recipes: List<Recipes>) {
+        localDataSource.insertAllRecipes(recipes.toListRecipeEntity())
     }
 }
