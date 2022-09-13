@@ -3,5 +3,6 @@ package com.jonathan.empowerment.utils
 object Constants {
 
     const val BASE_URL = "https://api.spoonacular.com/recipes/"
-    const val ID_RECIPE = 716429
+    const val ID_RECIPE: Long = 716429
+    const val API_KEY = "faf77d680b1d441a959fc6c8e74fff6d"
 }
