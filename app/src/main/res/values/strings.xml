@@ -2,4 +2,26 @@
     <string name="app_name">Empowerment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="name" translatable="false">Name</string>
+    <string name="original" translatable="false">Original</string>
+    <string name="original_name" translatable="false">Original Name</string>
+    <string name="consistency" translatable="false">Consistency</string>
+    <string name="amount" translatable="false">Amount</string>
+    <string name="measures_amount" translatable="false">Amount: </string>
+    <string name="measures_unitShort" translatable="false">UnitShort: </string>
+    <string name="measures_unitLong" translatable="false">UnitLong: </string>
+    <string name="score" translatable="false">Score</string>
+    <string name="open_issues" translatable="false">Open Issues</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="type" translatable="false">Type</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="branch" translatable="false">Branch</string>
+    <string name="watchers" translatable="false">Watchers</string>
+    <string name="forks" translatable="false">Forks</string>
+    <string name="measures" translatable="false">Measures</string>
+    <string name="us" translatable="false">Us</string>
+    <string name="metric" translatable="false">Metric</string>
+    <string name="aisle" translatable="false">Aisle</string>
+    <string name="content_aisle" translatable="false">Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.</string>
 </resources>
