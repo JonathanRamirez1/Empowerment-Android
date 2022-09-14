@@ -40,7 +40,18 @@ class RecipeAdapter(private val itemRecipes: ArrayList<Recipes>) :
             navController.navigate(
                 R.id.recipeDetailFragment,
                 bundleOf(
-                    "name" to result.name
+                    "aisle" to result.aisle,
+                    "image" to result.image,
+                    "consistency" to result.consistency,
+                    "original" to result.original,
+                    "originalName" to result.originalName,
+                    "amount" to result.amount,
+                    "usAmount" to result.measure?.us?.amount,
+                    "usShort" to result.measure?.us?.unitShort,
+                    "usLong" to result.measure?.us?.unitLong,
+                    "metricAmount" to result.measure?.metric?.amount,
+                    "metricShort" to result.measure?.metric?.unitShort,
+                    "metricLong" to result.measure?.metric?.unitLong,
                 )
             )
         }
