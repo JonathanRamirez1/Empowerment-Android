@@ -3,7 +3,7 @@ package com.jonathan.empowerment.domain.model
 import com.jonathan.empowerment.data.datasource.local.entity.MetricEntity
 
 data class Metric(
-    val amount: Long?,
+    val amount: Float?,
     val unitShort: String?,
     val unitLong: String?
 )
