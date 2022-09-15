@@ -1,10 +1,6 @@
 package com.jonathan.empowerment.domain
 
 import com.google.common.truth.Truth.assertThat
-import com.jonathan.empowerment.data.datasource.local.entity.MeasureEntity
-import com.jonathan.empowerment.data.datasource.local.entity.MetricEntity
-import com.jonathan.empowerment.data.datasource.local.entity.RecipeEntity
-import com.jonathan.empowerment.data.datasource.local.entity.UsEntity
 import com.jonathan.empowerment.data.repository.RecipeRepository
 import com.jonathan.empowerment.domain.model.Measure
 import com.jonathan.empowerment.domain.model.Metric
